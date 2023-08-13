@@ -66,7 +66,11 @@ ${answers.description}
 6. [Questions](#questions)
 
 ## Installation
+To install this project, run the following commands:
+
+\`\`\`
 ${answers.installation}
+\`\`\`
 
 ## Usage
 ${answers.usage}
@@ -78,7 +82,11 @@ This project is licensed under the ${answers.license} license.
 ${answers.contributing}
 
 ## Tests
+To run tests, use the following command:
+
+\`\`\`
 ${answers.tests}
+\`\`\`
 
 ## Questions
 For any questions, please reach out to me on [GitHub](https://github.com/${answers.github}) or email me at ${answers.email}.
