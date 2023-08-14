@@ -1,6 +1,14 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+const licenseBadges = {
+    'MIT': '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+    'GPLv3': '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
+    'Apache': '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+    'BSD': '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)',
+    'None': ''
+};
+
 const questions = [
     {
         type: 'input',
@@ -53,6 +61,8 @@ const questions = [
 inquirer.prompt(questions).then(answers => {
     const readmeText = `
 # ${answers.title}
+
+${licenseBadges[answers.license]}
 
 ## Description
 ${answers.description}
