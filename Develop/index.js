@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+// License  badges for different license types
 const licenseBadges = {
     'MIT': '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
     'GPLv3': '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
@@ -8,7 +9,7 @@ const licenseBadges = {
     'BSD': '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)',
     'None': ''
 };
-
+// Array of questions for inquirer prompts
 const questions = [
     {
         type: 'input',
@@ -57,8 +58,9 @@ const questions = [
         message: 'Enter your email address:',
     },
 ];
-
+// Prompt the user with the questions and generate the README
 inquirer.prompt(questions).then(answers => {
+    // Generate the content for the readme file in .md format
     const readmeText = `
 # ${answers.title}
 
@@ -101,7 +103,7 @@ ${answers.tests}
 ## Questions
 For any questions, please reach out to me on [GitHub](https://github.com/${answers.github}) or email me at ${answers.email}.
 `;
-
+    // Write the generated content to the README file
     fs.writeFile('README.md', readmeText, err => {
         if (err) {
             console.error(err);
