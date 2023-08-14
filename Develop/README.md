@@ -1,10 +1,10 @@
 
-# DEMO
+# demo test
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-d
+desc
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -18,24 +18,24 @@ d
 To install this project, run the following commands:
 
 ```
-
+npm i
 ```
 
 ## Usage
-d
+examples
 
 ## License
 This project is licensed under the MIT license.
 
 ## Contributing
-
+collab1 collab2
 
 ## Tests
 To run tests, use the following command:
 
 ```
-d
+npm run test
 ```
 
 ## Questions
-For any questions, please reach out to me on [GitHub](https://github.com/charltonortega) or email me at adasdsa@adasd.com.
+For any questions, please reach out to me on [GitHub](https://github.com/charltonortega) or email me at charltonortega14@gmail.com.

@@ -107,6 +107,6 @@ For any questions, please reach out to me on [GitHub](https://github.com/${answe
             console.error(err);
             return;
         }
-        console.log('README.md has been generated!');
+        console.log('README.md has been generated successfully!');
     });
 });
