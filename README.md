@@ -15,6 +15,9 @@ $ node index.js
   </a>
 </p>
 
+### Demo README-Generator
+
+Please review the generated [demo README.md](./Develop/README-demo.md) for a sample output of the README generator.
 # Deployment
 The URL of the video demo: [Video Link](https://drive.google.com/file/d/1EhtVsQLr0Op2ROge6mZctzjFw9e6nRHZ/view?usp=sharing)
 
